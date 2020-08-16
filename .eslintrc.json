@@ -4,6 +4,7 @@
     "node": true
   },
   "extends": [
+    "eslint:recommended",
     "airbnb-base"
   ],
   "parserOptions": {
@@ -11,6 +12,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "no-undef": "off",
     "no-console": "off",
     "no-multi-assign": "off",
     "prefer-template": "off",
