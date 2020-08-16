@@ -1,18 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+
 body {
   margin: 0;
   background: #000;
   overflow: hidden;
 }
+
 .intro {
   position: absolute;
   top: 40%;
   left: 20%;
   z-index: 1;
 }
+
 .intro_texto {
   font-family: "News Cycle", sans-serif;
   color: #00BFFF;
   font-weight: 400;
   letter-spacing: .1em;
+}
+
+.historia {
+  position: absolute;
+  top: 80%;
+}
+
+.historia_texto {
+  font-family: "News Cycle", sans-serif;
+  font-weight: 700;
+  color: #FFD700;
+  text-align: justify;
+  letter-spacing: .1em;
+  line-height: 1.1em;
+}
+
+.paragrafos {
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  z-index: 1;
+  transform-origin: 50%;
+  transform: perspective(300px) rotateX(20deg);
 }
