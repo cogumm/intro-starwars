@@ -1,0 +1,21 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-multi-assign": "off",
+    "prefer-template": "off",
+    "no-plusplus": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off"
+  }
+}
