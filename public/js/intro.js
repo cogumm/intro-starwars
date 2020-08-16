@@ -23,3 +23,12 @@ window.addEventListener('resize', () => {
   historia.style.fontSize = width / 20 + 'px';
   paragrafos.style.height = height + 'px';
 });
+
+/**
+ * Função para iniciar a estória.
+ */
+function start() {
+  intro.className = 'intro intro_texto intro_animacao';
+
+  historia.className = 'historia historia_texto historia_animacao';
+}
