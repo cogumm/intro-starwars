@@ -32,3 +32,40 @@ function start() {
 
   historia.className = 'historia historia_texto historia_animacao';
 }
+
+/**
+ * Efeito do fundo de estrelas.
+ */
+let canvas = document.getElementById('star');
+const ctx = canvas.getContext('2d');
+
+canvas.width = width;
+canvas.height = height;
+
+const num = 100;
+const size = 2;
+const elements = [];
+
+function inicio() {
+  for (let i = 0; i < num; i++) {
+    elements[i] = {
+      x: Math.ceil(Math.random() * width),
+      y: Math.ceil(Math.random() * height),
+      size: Math.random() * size,
+    };
+  }
+}
+
+function star() {
+  ctx.clearRect(0, 0, width, height);
+  for (let i = 0; i < num; i++) {
+    const e = elements[i];
+    ctx.beginPath();
+    ctx.fillStyle = '#FFFFFF';
+    ctx.arc(e.x, e.y, e.size, 0, 2 * Math.PI);
+    ctx.fill();
+  }
+}
+
+inicio();
+star();
