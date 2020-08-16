@@ -15,4 +15,7 @@ window.addEventListener('resize', () => {
   height = canvas.height = window.innerHeight;
 
   intro.style.fontSize = width / 30 + 'px';
+
+  historia.style.fontSize = width / 20 + 'px';
+  paragrafos.style.height = height + 'px';
 });
