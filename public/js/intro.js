@@ -4,8 +4,10 @@ let height = window.innerHeight;
  * Selecionando o elemento de class 'intro' para possamos utilizar em uma variável de mesmo nome.
  */
 const intro = document.getElementsByClassName('intro')[0];
+
 const historia = document.getElementsByClassName('historia')[0];
 const paragrafos = document.getElementsByClassName('paragrafos')[0];
+const song = document.getElementById('song');
 
 intro.style.fontSize = width / 30 + 'px';
 historia.style.fontSize = width / 20 + 'px';
@@ -31,6 +33,9 @@ function start() {
   intro.className = 'intro intro_texto intro_animacao';
 
   historia.className = 'historia historia_texto historia_animacao';
+
+  // Tocando a música.
+  song.play();
 }
 
 /**

@@ -97,3 +97,8 @@ canvas {
   left: 0;
   z-index: -1;
 }
+
+/* Colorindo o button */
+button {
+  background: #48ff00;
+}
