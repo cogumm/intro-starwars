@@ -61,7 +61,7 @@ function inicio() {
   }
 }
 
-function star() {
+function stars() {
   ctx.clearRect(0, 0, width, height);
   for (let i = 0; i < num; i++) {
     const e = elements[i];
@@ -73,4 +73,4 @@ function star() {
 }
 
 inicio();
-star();
+stars();
